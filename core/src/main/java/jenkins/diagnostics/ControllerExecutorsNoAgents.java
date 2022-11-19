@@ -46,11 +46,6 @@ public class ControllerExecutorsNoAgents extends AdministrativeMonitor {
         return Messages.ControllerExecutorsNoAgents_DisplayName();
     }
 
-    @Override
-    public boolean isSecurity() {
-        return true;
-    }
-
     @RequirePOST
     public void doAct(StaplerRequest req, StaplerResponse rsp) throws IOException {
         if (req.hasParameter("no")) {
